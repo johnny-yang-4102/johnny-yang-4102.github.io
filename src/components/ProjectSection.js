@@ -30,7 +30,7 @@ const projectData = [
 
 const ProjectSection = () => {
   return (
-    <div>
+    <div className="project-section">
       {projectData.map(project => <Project key={project.id} title={project.title} description={project.description} technologies={project.technologies}/>)}
     </div>
   )

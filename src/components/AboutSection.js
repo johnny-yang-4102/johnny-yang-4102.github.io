@@ -1,10 +1,14 @@
 import React from "react"
-import { Link, Typography } from "@mui/material"
+import { Link, Typography, Avatar } from "@mui/material"
 import Resume from "./../Resume.pdf"
+import Pic from "./../profile.jpg"
+import './components.css'
 
-const AboutSection = ({ }) => {
+const AboutSection = () => {
   return (
-    <div>
+    <div className="about-section">
+
+      <Avatar alt="Johnny Yang" src={Pic} sx={{ width: 256, height: 256 }}/>
       <Typography variant="h4">
         Hi I'm Johnny Yang,
       </Typography>
