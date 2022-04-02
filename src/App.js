@@ -10,7 +10,6 @@ function App() {
       <NavBar/>
       <AboutSection/>
       <ProjectSection/>
-      <Project/>
     </div>
   );
 }

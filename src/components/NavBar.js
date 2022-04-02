@@ -1,9 +1,11 @@
 import React from "react"
 
+
+
 const NavBar = ({ }) => {
   return (
     <div>
-      <p>project</p>
+      <p>navbar</p>
     </div>
   )
 }
