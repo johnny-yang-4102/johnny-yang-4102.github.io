@@ -1,1 +1,14 @@
 /* About Me Section */
+
+.about-section{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.about-section-part{
+    padding: 0 px
+}
+.spacing{
+    padding: 8px 0 8px 0;
+}

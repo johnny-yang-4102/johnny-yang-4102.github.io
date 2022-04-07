@@ -1,16 +1,15 @@
 import NavBar from "./components/NavBar";
 import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
-import Project from "./components/Project";
-
+import { Stack, Divider } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
+    <Stack spacing={2} divider={<Divider orientation="horizontal" flexItem />} direction="column">
       <NavBar/>
       <AboutSection/>
       <ProjectSection/>
-    </div>
+    </Stack>
   );
 }
 
