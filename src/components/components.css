@@ -1,14 +1,31 @@
 /* About Me Section */
 
-.about-section{
+.about-section {
     display: flex;
     flex-direction: row;
 
 }
 
-.about-section-part{
+.about-section-part {
     padding: 0 px
 }
-.spacing{
+
+.spacing {
     padding: 8px 0 8px 0;
+}
+
+
+
+/* Project Section */
+.project-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.project-div{
+    display: flex;
+    flex-direction: row;
+}
+.project-div:hover {
+    background-color: rgba(224, 224, 224, 0.5);
 }

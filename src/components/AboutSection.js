@@ -1,5 +1,8 @@
 import React from "react"
 import { Link, Typography, Avatar, Grid } from "@mui/material"
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 import Resume from "./../Resume.pdf"
 import Pic from "./../profile.jpg"
 import './components.css'
@@ -30,7 +33,11 @@ const AboutSection = () => {
         </Typography>
 
         <Typography variant="body1" className="spacing">
-          Check out my work below!
+          Email: <Link href="#">jyang@virginia.edu</Link>
+        </Typography>
+
+        <Typography variant="body1" className="spacing">
+          Check out my otherwork below!
         </Typography>
       </Grid>
 

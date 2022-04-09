@@ -5,9 +5,11 @@ import { Stack, Divider } from "@mui/material";
 
 function App() {
   return (
-    <Stack spacing={2} divider={<Divider orientation="horizontal" flexItem />} direction="column">
+    <Stack spacing={2} direction="column">
       <NavBar/>
+      <Divider textAlign="center" sx={{ borderBottomWidth: 5 }}>ABOUT</Divider>
       <AboutSection/>
+      <Divider textAlign="center" >PROJECTS</Divider>
       <ProjectSection/>
     </Stack>
   );
