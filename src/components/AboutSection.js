@@ -37,7 +37,7 @@ const AboutSection = () => {
         </Typography>
 
         <Typography variant="body1" className="spacing">
-          Check out my otherwork below!
+          Check out my other work below!
         </Typography>
       </Grid>
 
