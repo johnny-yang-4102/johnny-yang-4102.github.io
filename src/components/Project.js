@@ -7,12 +7,12 @@ const Project = ({ title, description, technologies, link }) => {
 
   return (
     <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
-      <Stack direction={{ xs: 'column', sm: 'row' }} className="project-div">
+      <Stack direction={{ xs: 'column', sm: 'row' }} className="project-div" alignItems={{xs: "center", sm: "flex-start"}}>
         <Avatar alt="Johnny Yang" xs="auto" src={Pic} sx={{ width: 128, height: 128, mr: 2 }} />
 
         <Stack direction="column" spacing={2}>
-          <Typography variant="h5">{title}</Typography>
-          <Typography variant="body2">{description}</Typography>
+          <Typography variant="h5" textAlign={{xs: "center", sm: "left"}}>{title}</Typography>
+          <Typography variant="body2" textAlign={{xs: "center", sm: "left"}}>{description}</Typography>
 
           {/* Change when reaching 290 size */}
           {/* Display none here when sm size */}

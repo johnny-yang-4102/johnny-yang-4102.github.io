@@ -4,14 +4,15 @@ import ProjectSection from "./components/ProjectSection";
 import ContactSection from "./components/ContactSection";
 import { Stack, Divider, Typography } from "@mui/material";
 
+
 function App() {
   return (
     <Stack spacing={4} direction="column">
       <NavBar/>
       <Divider textAlign="center" variant="inset"><Typography variant="h3">About</Typography></Divider>
-      <AboutSection/>
+      <AboutSection />
       <Divider textAlign="center" ><Typography variant="h3">Projects</Typography></Divider>
-      <ProjectSection/>
+      <ProjectSection />
       <Divider textAlign="center"><Typography variant="h3">Contact</Typography></Divider>
       <ContactSection/>
     </Stack>

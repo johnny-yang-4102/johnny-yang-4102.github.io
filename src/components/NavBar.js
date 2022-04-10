@@ -26,9 +26,9 @@ const NavBar = () => {
 
 
   return (
-    <AppBar position="static" elevation={0} sx={{background: "#FFFFFF", borderBottom: 2, paddingBottom: 2, borderColor: "#000000"}}>
+    <AppBar position="static" elevation={0} sx={{ background: "#FFFFFF", borderBottom: 2, paddingBottom: 2, borderColor: "#000000" }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{display: { xs: 'flex' }, flexDirection: "row", justifyContent: "space-between"}}>
+        <Toolbar disableGutters sx={{ display: { xs: 'flex' }, flexDirection: "row", justifyContent: "space-between" }}>
 
           {/* LOGO */}
           <Typography
@@ -42,7 +42,7 @@ const NavBar = () => {
           </Typography>
 
           {/*Drawer - small screen  */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'} }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
 
             {/* Menu triple bar */}
             <IconButton
@@ -51,7 +51,7 @@ const NavBar = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="default"
             >
               <MenuIcon />
             </IconButton>
@@ -85,22 +85,21 @@ const NavBar = () => {
 
           {/* LOGO - small screen */}
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="div"
             color="black"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            name
+            Johnny Yang
           </Typography>
 
-          {/* Issue */}
           {/* ABOUT, PROJECTS, CONTACT - full screen */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' },  alignItems: "flex-end" }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: "flex-end" }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
                 {page}
