@@ -3,12 +3,12 @@ import { Chip, Typography, Avatar, Stack, Grid } from "@mui/material"
 import Pic from "./../profile.jpg"
 import "./components.css"
 
-const Project = ({ title, description, technologies, link }) => {
+const Project = ({ title, description, technologies, link, pic }) => {
 
   return (
     <a className="project-link" href={link} target="_blank" rel="noopener noreferrer">
       <Stack direction={{ xs: 'column', sm: 'row' }} className="project-div" alignItems={{xs: "center", sm: "flex-start"}}>
-        <Avatar alt="Johnny Yang" xs="auto" src={Pic} sx={{ width: 128, height: 128, mr: 2 }} />
+        <Avatar alt="Johnny Yang" xs="auto" src={pic} sx={{ width: 128, height: 128, mr: 2 }} />
 
         <Stack direction="column" spacing={2}>
           <Typography variant="h5" textAlign={{xs: "center", sm: "left"}}>{title}</Typography>

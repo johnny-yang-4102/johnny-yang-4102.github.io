@@ -1,6 +1,9 @@
 import React from "react"
 import Project from './Project'
 import { Stack, Divider } from "@mui/material"
+import hoosyourfit from "./../hoosyourfit.png"
+import paththink from "./../paththink.PNG"
+import customdeath from "./../customdeath.png"
 
 /*/
 default: grey
@@ -38,7 +41,8 @@ const projectData = [
             {id: 4, name: "Heroku", color: technologyColors["Heroku"]},
             {id: 5, name: "Javascript", color: technologyColors["Javascript"]}
         ],
-        link: "https://devpost.com/software/hoosyourfit?ref_content=my-projects-tab&ref_feature=my_projects"
+        link: "https://devpost.com/software/hoosyourfit?ref_content=my-projects-tab&ref_feature=my_projects",
+        pic: hoosyourfit
     },
     {
         id: 2,
@@ -49,7 +53,8 @@ const projectData = [
             {id: 2, name: "XML", color: technologyColors["XML"]},
             {id: 3, name: "Java", color: technologyColors["React"]}
         ],
-        link: "https://apkcombo.com/paththink-brain-game/com.j4102.mazebrain/"
+        link: "https://apkcombo.com/paththink-brain-game/com.j4102.mazebrain/",
+        pic: paththink
     },
 
     {
@@ -62,7 +67,8 @@ const projectData = [
           {id: 3, name: "Vault", color: technologyColors["Vault"]},
           {id: 3, name: "Java", color: technologyColors["Java"]}
       ],
-      link: "https://www.spigotmc.org/resources/customdeath-head-drops-money-taken.26457/"
+      link: "https://www.spigotmc.org/resources/customdeath-head-drops-money-taken.26457/",
+      pic: customdeath
   }
 
 ]
@@ -70,7 +76,7 @@ const projectData = [
 const ProjectSection = () => {
   return (
     <Stack direction="column" spacing={2} divider={<Divider light orientation="horizontal" sx={{ borderBottomWidth: 2 }} flexItem />}>
-      {projectData.map(project => <Project key={project.id} title={project.title} description={project.description} technologies={project.technologies} link={project.link}/>)}
+      {projectData.map(project => <Project key={project.id} title={project.title} description={project.description} technologies={project.technologies} link={project.link} pic={project.pic}/>)}
     </Stack>
   )
 }
