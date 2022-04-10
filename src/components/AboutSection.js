@@ -9,18 +9,19 @@ import './components.css'
 
 const AboutSection = () => {
   return (
-    <Grid container spacing={8}   justifyContent="center" >
+    <Grid container spacing={2} justifyContent="center">
 
-      <Grid item xs="auto">
+      
+      <Grid item xs={12} sm="auto">
         <Avatar alt="Johnny Yang" src={Pic} sx={{ width: 256, height: 256 }} />
       </Grid>
 
-      <Grid item xs={12} sm={5} >
-        <Typography variant="h4">
+      <Grid item xs={12} sm={6} >
+        <Typography variant="h5" className="spacing">
           Hi I'm Johnny Yang,
         </Typography>
 
-        <Typography variant="h4">
+        <Typography variant="h5" className="spacing">
           an aspiring full-stack software engineer.
         </Typography>
         <Typography variant="body1" className="spacing">

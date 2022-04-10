@@ -8,13 +8,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['ABOUT', 'PROJECTS', 'CONTACT'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['About', 'Projects', 'Contact'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,21 +26,25 @@ const NavBar = () => {
 
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" elevation={0} sx={{background: "#FFFFFF", borderBottom: 2, paddingBottom: 2, borderColor: "#000000"}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters color="white">
+        <Toolbar disableGutters sx={{display: { xs: 'flex' }, flexDirection: "row", justifyContent: "space-between"}}>
+
+          {/* LOGO */}
           <Typography
-            variant="h5"
+            variant="h2"
             noWrap
             component="div"
             color="black"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            JOHNNY YANG
+            Johnny Yang
           </Typography>
 
           {/*Drawer - small screen  */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'} }}>
+
+            {/* Menu triple bar */}
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -90,11 +91,12 @@ const NavBar = () => {
             color="black"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            JOHNNY YANG
+            name
           </Typography>
 
+          {/* Issue */}
           {/* ABOUT, PROJECTS, CONTACT - full screen */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' },  alignItems: "flex-end" }}>
             {pages.map((page) => (
               <Button
                 key={page}

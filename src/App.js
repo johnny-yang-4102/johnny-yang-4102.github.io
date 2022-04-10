@@ -2,17 +2,17 @@ import NavBar from "./components/NavBar";
 import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
 import ContactSection from "./components/ContactSection";
-import { Stack, Divider } from "@mui/material";
+import { Stack, Divider, Typography } from "@mui/material";
 
 function App() {
   return (
-    <Stack spacing={2} direction="column">
+    <Stack spacing={4} direction="column">
       <NavBar/>
-      <Divider textAlign="center" sx={{ borderBottomWidth: 5 }}>ABOUT</Divider>
+      <Divider textAlign="center" variant="inset"><Typography variant="h3">About</Typography></Divider>
       <AboutSection/>
-      <Divider textAlign="center" >PROJECTS</Divider>
+      <Divider textAlign="center" ><Typography variant="h3">Projects</Typography></Divider>
       <ProjectSection/>
-      <Divider textAlign="center">CONTACT</Divider>
+      <Divider textAlign="center"><Typography variant="h3">Contact</Typography></Divider>
       <ContactSection/>
     </Stack>
   );
