@@ -9,11 +9,11 @@ function App() {
   return (
     <Stack spacing={4} direction="column">
       <NavBar/>
-      <Divider textAlign="center" variant="inset"><Typography variant="h3">About</Typography></Divider>
-      <AboutSection />
-      <Divider textAlign="center" ><Typography variant="h3">Projects</Typography></Divider>
-      <ProjectSection />
-      <Divider textAlign="center"><Typography variant="h3">Contact</Typography></Divider>
+      <Divider textAlign="center" variant="inset"><Typography variant="h3" id="about">About</Typography></Divider>
+      <AboutSection/>
+      <Divider textAlign="center" ><Typography variant="h3" id="projects">Projects</Typography></Divider>
+      <ProjectSection/>
+      <Divider textAlign="center"><Typography variant="h3" id="contact">Contact</Typography></Divider>
       <ContactSection/>
     </Stack>
   );

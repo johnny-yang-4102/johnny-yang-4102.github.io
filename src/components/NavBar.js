@@ -10,6 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import './components.css'
 
 const pages = ['About', 'Projects', 'Contact'];
 
@@ -76,9 +77,11 @@ const NavBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                <a className="nav-anchor" href={"#"+page.toLowerCase()}>
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                </a>
               ))}
             </Menu>
           </Box>
@@ -97,13 +100,15 @@ const NavBar = () => {
           {/* ABOUT, PROJECTS, CONTACT - full screen */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: "flex-end" }}>
             {pages.map((page) => (
-              <Button
-                key={page}
+              <a className="nav-anchor" href={"#" + page.toLowerCase()}>
+                <Button
+                  key={page}
 
-                sx={{ my: 2, color: 'black', display: 'block' }}
-              >
-                {page}
-              </Button>
+                  sx={{ my: 2, color: 'black', display: 'block' }}
+                >
+                  {page}
+                </Button>
+              </a>
             ))}
           </Box>
 

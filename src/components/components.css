@@ -31,3 +31,9 @@
 .project-div:hover {
     background-color: rgba(224, 224, 224, 0.5);
 }
+
+/* Navbar */
+.nav-anchor {
+    text-decoration: none;
+    color: #000000;
+}
