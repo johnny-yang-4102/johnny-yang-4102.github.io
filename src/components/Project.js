@@ -23,7 +23,7 @@ const Project = ({ title, description, technologies, link, pic }) => {
 
 
           <Grid container sx={{ display: { md: "flex"} }}>
-            {technologies.map(technology => <Grid item xs={5} sm={4} md={2} lg={1.5}><Chip key={technology.id} label={technology.name} color={technology.color} variant="filled" sx={{ p: 0.5, m: 0.5 }} /> </Grid>)}
+            {technologies.map(technology => <Grid item xs={5} sm={4} md={2} lg={1.5} key={technology.id}><Chip label={technology.name} color={technology.color} variant="filled" sx={{ p: 0.5, m: 0.5 }} /> </Grid>)}
           </Grid>
         </Stack>
 

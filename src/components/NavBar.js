@@ -77,7 +77,7 @@ const NavBar = () => {
               }}
             >
               {pages.map((page) => (
-                <a className="nav-anchor" href={"#"+page.toLowerCase()}>
+                <a className="nav-anchor" href={"#"+page.toLowerCase()} key={pages.indexOf(page)}>
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
@@ -100,7 +100,7 @@ const NavBar = () => {
           {/* ABOUT, PROJECTS, CONTACT - full screen */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: "flex-end" }}>
             {pages.map((page) => (
-              <a className="nav-anchor" href={"#" + page.toLowerCase()}>
+              <a className="nav-anchor" href={"#" + page.toLowerCase()} key={pages.indexOf(page)}>
                 <Button
                   key={page}
 
