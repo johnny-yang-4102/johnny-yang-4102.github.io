@@ -9,10 +9,10 @@ import './components.css'
 
 const AboutSection = () => {
   return (
-    <Grid container spacing={2} justifyContent="flex-end">
+    <Grid container spacing={2} justifyContent="center">
 
       
-      <Grid item xs={12} sm="auto" >
+      <Grid item xs={12} sm="auto">
         <Avatar alt="Johnny Yang" src={Pic} sx={{ width: 256, height: 256 }} />
       </Grid>
 

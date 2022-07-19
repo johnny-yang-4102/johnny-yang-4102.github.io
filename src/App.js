@@ -11,7 +11,7 @@ function App() {
       <NavBar />
 
       <Grid item>
-        <Divider textAlign="center" variant="inset"><Typography variant="h3" id="about">About</Typography></Divider>
+        <Divider textAlign="center"><Typography variant="h3" id="about">About</Typography></Divider>
       </Grid>
 
       <AboutSection />
