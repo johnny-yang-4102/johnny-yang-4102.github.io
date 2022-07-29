@@ -27,7 +27,7 @@ const AboutSection = () => {
         <Typography variant="body1" className="spacing">
           I've professionally worked on a diverse range of experiences, 
           from research involving ML models identifying invasive species in Nepal
-          to building an integrated monitoring tool for multifaceted enterprise systems
+          to building an integrated monitoring tool for multiconnected Kafka enterprise systems. 
         </Typography>
 
         <Typography variant="body1" className="spacing">
