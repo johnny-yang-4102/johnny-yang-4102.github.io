@@ -25,8 +25,9 @@ const AboutSection = () => {
           an aspiring full-stack software engineer.
         </Typography>
         <Typography variant="body1" className="spacing">
-          I've professionally worked on a diverse range of experiences, most notably mapping out invasive species in Nepal,
-          building out a cyberrange for a cybersecurity training company, and more.
+          I've professionally worked on a diverse range of experiences, 
+          from research involving ML models identifying invasive species in Nepal
+          to building an integrated monitoring tool for multifaceted enterprise systems
         </Typography>
 
         <Typography variant="body1" className="spacing">
@@ -38,7 +39,7 @@ const AboutSection = () => {
         </Typography>
 
         <Typography variant="body1" className="spacing">
-          Check out my other work below!
+          Check out my projects below!
         </Typography>
       </Grid>
 
