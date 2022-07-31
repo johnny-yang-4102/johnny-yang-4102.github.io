@@ -1,6 +1,5 @@
 import React from "react"
 import { Chip, Typography, Avatar, Stack, Grid } from "@mui/material"
-import Pic from "./../profile.jpg"
 import "./components.css"
 
 const Project = ({ title, description, technologies, link, pic }) => {

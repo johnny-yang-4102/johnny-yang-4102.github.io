@@ -4,7 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import Resume from "./../Resume.pdf"
-import Pic from "./../profile.jpg"
+import Pic from "./../profile.jpeg"
 import './components.css'
 
 const AboutSection = () => {
@@ -27,7 +27,7 @@ const AboutSection = () => {
         <Typography variant="body1" className="spacing">
           I've professionally worked on a diverse range of experiences, 
           from research involving ML models identifying invasive species in Nepal
-          to building an integrated monitoring tool for multiconnected Kafka enterprise systems. 
+          to a corporate internship building an integrated financial data-pipeline monitoring tool for multi-connected Kafka enterprise systems. 
         </Typography>
 
         <Typography variant="body1" className="spacing">
