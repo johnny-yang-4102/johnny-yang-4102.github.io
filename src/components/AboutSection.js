@@ -1,19 +1,32 @@
 import React from "react"
-import { Link, Typography, Avatar, Grid } from "@mui/material"
+import { Link, Typography, Avatar, Grid, Paper } from "@mui/material"
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+import { makeStyles } from "@mui/styles";
 
 import Resume from "./../Resume.pdf"
 import Pic from "./../profile.jpeg"
 import './components.css'
 
-const AboutSection = () => {
-  return (
-    <Grid container spacing={2} justifyContent="center">
 
-      
+const useStyles = makeStyles(() => ({
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+}));
+
+const AboutSection = () => {
+  const classes = useStyles();
+  return (
+
+    <div className={classes.container}>
+    <Grid container spacing={2} justifyContent="center" >
+
+
       <Grid item xs={12} sm="auto">
-        <Avatar alt="Johnny Yang" src={Pic} sx={{ width: 256, height: 256 }} />
+         <Avatar alt="Johnny Yang" src={Pic} sx={{ width: 256, height: 256 }} /> 
       </Grid>
 
       <Grid item xs={12} sm={6} >
@@ -22,12 +35,12 @@ const AboutSection = () => {
         </Typography>
 
         <Typography variant="h5" className="spacing">
-          an aspiring full-stack software engineer.
+          a full-stack software engineer.
         </Typography>
         <Typography variant="body1" className="spacing">
-          I've professionally worked on a diverse range of experiences, 
+          I've professionally worked on a diverse range of experiences,
           from research involving ML models identifying invasive species in Nepal
-          to a corporate internship building an integrated financial data-pipeline monitoring tool for multi-connected Kafka enterprise systems. 
+          to a corporate internship building an integrated financial data-pipeline monitoring tool for multi-connected Kafka enterprise systems.
         </Typography>
 
         <Typography variant="body1" className="spacing">
@@ -44,6 +57,7 @@ const AboutSection = () => {
       </Grid>
 
     </Grid>
+    </div>
   )
 }
 
