@@ -1,0 +1,32 @@
+.main-page-content {
+  margin: 40px auto;
+  padding: 2px 40px;
+  max-width: 650px;
+  background-color: #eeeeeef2;
+  border-radius: 10px;
+  border: medium solid rgb(198, 195, 195);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-image: url('bckg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* shorthand for top+bottom & left+right. MDN: The browser selects a suitable margin to use. For example, in certain cases this value can be used to center an element.  */
+}
+
+/* body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+} */
